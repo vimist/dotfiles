@@ -8,20 +8,37 @@ cd $(dirname $0)
 backup_suffix='.dotfile_backup'
 
 # Link a file from this repository into the users home directory
-# backups of existing files will be made with a siffix of $backup_suffix
+# backups of existing files will be made with a suffix of $backup_suffix
 # $1 The source file, relative to the 'files' directory
 # $2 The destination file, relative to $HOME
 function link() {
     src="$PWD/files/$1"
     dst="$HOME/$2"
 
+    # If the destination is a symlink
+    if [[ -L "$dst" ]]; then
+        rm "$dst"
+        echo "Removed existing symlink '$dst'"
+    fi
+
     ln --symbolic --backup --suffix "$backup_suffix" "$src" "$dst"
+    echo "Installed '$dst'"
 }
 
 # Start linking files
 
+# Bash
 link bash/.bashrc .bashrc
 
+# Vim
+link vim/.vimrc .vimrc
 
+# Tmux
+link tmux/.tmux.conf .tmux.conf
+
+# Git
+link git/.gitconfig .gitconfig
+
+echo
 echo "Done!"
 echo "Any existing files have been renamed with a suffix of '$backup_suffix'"
