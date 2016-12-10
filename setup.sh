@@ -29,6 +29,16 @@ function link() {
     echo "Installed '$dst'"
 }
 
+# Redirect the output so we don't clutter the screen
+function pushd() {
+    command pushd "$1" > /dev/null
+}
+
+# Redirect the output so we don't clutter the screen
+function popd() {
+    command popd > /dev/null
+}
+
 # Start linking files
 
 # Bash
