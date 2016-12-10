@@ -42,16 +42,24 @@ function popd() {
 # Start linking files
 
 # Bash
-link bash/.bashrc .bashrc
+pushd files/bash
+link .bashrc
+popd
 
 # Vim
-link vim/.vimrc .vimrc
+pushd files/vim
+link .vimrc .vimrc
+popd
 
 # Tmux
-link tmux/.tmux.conf .tmux.conf
+pushd files/tmux
+link .tmux.conf
+popd
 
 # Git
-link git/.gitconfig .gitconfig
+pushd files/git
+link .gitconfig
+popd
 
 echo
 echo "Done!"
