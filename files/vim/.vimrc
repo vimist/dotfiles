@@ -52,3 +52,7 @@ set smartindent
 " Set low priority file suffixes for auto completion
 set suffixes=.swp
 
+" Load extra configuration files
+source $HOME/.vim/vundle.vim
+source $HOME/.vim/keybindings.vim
+

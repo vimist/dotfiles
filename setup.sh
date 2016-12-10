@@ -49,6 +49,20 @@ popd
 # Vim
 pushd files/vim
 link .vimrc .vimrc
+link .vim/vundle.vim
+link .vim/keybindings.vim
+
+vundle_path="$HOME/.vim/bundle/Vundle.vim"
+if [[ -d "$vundle_path" ]]; then
+    rm -Rf "$vundle_path"
+    echo "Removed existing Vundle"
+fi
+
+git clone https://github.com/VundleVim/Vundle.vim.git "$vundle_path"
+echo "Installed Vundle"
+
+vim -c 'VundleInstall' -c 'quitall'
+echo "Installed Vundle plugins"
 popd
 
 # Tmux
