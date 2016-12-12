@@ -69,6 +69,8 @@ popd
 # Tmux
 pushd files/tmux
 link .tmux.conf
+link .tmux/keybindings.conf
+link .tmux/theme.conf
 popd
 
 # Git
