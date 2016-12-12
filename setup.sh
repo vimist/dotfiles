@@ -44,6 +44,7 @@ function popd() {
 # Bash
 pushd files/bash
 link .bashrc
+link .bash/promptstring.sh
 popd
 
 # Vim
