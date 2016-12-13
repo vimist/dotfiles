@@ -4,6 +4,9 @@ syntax on
 " Don't worry about being compatible with vi
 set nocompatible
 
+" Highlight search results
+set hlsearch
+
 set wrap
 
 set cursorline
