@@ -62,7 +62,7 @@ fi
 git clone https://github.com/VundleVim/Vundle.vim.git "$vundle_path"
 echo "Installed Vundle"
 
-vim -c 'VundleInstall' -c 'quitall'
+vim -c 'PluginClean!' -c 'PluginInstall' -c 'quitall'
 echo "Installed Vundle plugins"
 popd
 
