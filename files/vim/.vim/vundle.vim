@@ -11,8 +11,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'scrooloose/nerdcommenter'
-let g:NERDSpaceDelims = 1
-let g:NERDDefaultAlign = 'left'
 
 Plugin 'nanotech/jellybeans.vim'
 
