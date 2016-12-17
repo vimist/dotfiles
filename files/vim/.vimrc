@@ -1,4 +1,8 @@
 colorscheme default
+" Load other configuration files
+source $HOME/.vim/vundle.vim
+source $HOME/.vim/pluginsettings.vim
+source $HOME/.vim/keybindings.vim
 syntax on
 
 " Don't worry about being compatible with vi
@@ -54,8 +58,4 @@ set smartindent
 
 " Set low priority file suffixes for auto completion
 set suffixes=.swp
-
-" Load extra configuration files
-source $HOME/.vim/vundle.vim
-source $HOME/.vim/keybindings.vim
 
