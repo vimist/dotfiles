@@ -24,6 +24,8 @@ set hidden
 
 set ruler
 set showmode
+" Remove comment character when joining lines
+set formatoptions+=j
 
 " TODO: Customise status line
 " set statusline=''
