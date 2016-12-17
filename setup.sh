@@ -53,6 +53,7 @@ link .vimrc .vimrc
 link .vim/vundle.vim
 link .vim/pluginsettings.vim
 link .vim/keybindings.vim
+link .vim/statusline.vim
 
 vundle_path="$HOME/.vim/bundle/Vundle.vim"
 if [[ -d "$vundle_path" ]]; then

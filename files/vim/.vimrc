@@ -22,13 +22,17 @@ set listchars=tab:»\ ,trail:·
 
 set hidden
 
-set ruler
-set showmode
 " Remove comment character when joining lines
 set formatoptions+=j
 
-" TODO: Customise status line
-" set statusline=''
+" Don't show the mode as our custom statusline does this for us
+set noshowmode
+
+" Load our custom statusline
+source $HOME/.vim/statusline.vim
+
+" Always show the status line
+set laststatus=2
 
 set scrolloff=5
 
