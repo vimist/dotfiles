@@ -1,8 +1,10 @@
-colorscheme default
 " Load other configuration files
 source $HOME/.vim/vundle.vim
 source $HOME/.vim/pluginsettings.vim
 source $HOME/.vim/keybindings.vim
+
+" General settings
+colorscheme jellybeans
 syntax on
 
 " Don't worry about being compatible with vi
