@@ -67,11 +67,11 @@ function build_PS1() {
 
 # Builds PS2 and PS4
 function build_PS2_PS4() {
-	echo -e "${styles[white_darkgrey]} ${styles[black_yellow]} ${styles[reset]} "
+	echo -e "${styles[black_yellow]} ${styles[reset]} "
 }
 
 # Builds PS3
 function build_PS3() {
-	echo -e "\n${styles[white_darkgrey]} ? ${styles[black_yellow]} ${styles[reset]} "
+	echo -e "\n${styles[white_darkgrey]} Choose ${styles[black_yellow]} ${styles[reset]} "
 }
 
