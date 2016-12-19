@@ -55,13 +55,13 @@ link .vim/pluginsettings.vim
 link .vim/keybindings.vim
 link .vim/statusline.vim
 
-vundle_path="$HOME/.vim/bundle/Vundle.vim"
+vundle_path="$HOME/.vim/bundle"
 if [[ -d "$vundle_path" ]]; then
     rm -Rf "$vundle_path"
-    echo "Removed existing Vundle"
+    echo "Removed existing Vundle plugins"
 fi
 
-git clone https://github.com/VundleVim/Vundle.vim.git "$vundle_path"
+git clone https://github.com/VundleVim/Vundle.vim.git "$vundle_path/Vundle.vim"
 echo "Installed Vundle"
 
 vim -c 'PluginClean!' -c 'PluginInstall' -c 'quitall'
