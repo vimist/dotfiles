@@ -20,6 +20,8 @@ set cursorline
 set list
 set listchars=tab:»\ ,trail:·
 
+set fillchars=vert:│,fold:-,diff:-
+
 set hidden
 
 " Remove comment character when joining lines
