@@ -1,9 +1,9 @@
 [user]
-    name = vimist
-    email = vimist@users.noreply.github.com
+	name = vimist
+	email = vimist@users.noreply.github.com
 
 [core]
-    editor = vim
+	editor = vim
 
 [color]
-    ui = auto
+	ui = auto
