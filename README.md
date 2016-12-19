@@ -9,7 +9,7 @@ Run:
 
 ## Palette
 
-The basic 16 terminal colours that are recommended for se with these dot files are:
+The basic 16 terminal colours that are recommended for use with these dot files are:
 
      1: rgb( 10,  10,  10)
      2: rgb(207, 106,  76)
