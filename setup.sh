@@ -50,6 +50,7 @@ popd
 # Vim
 pushd files/vim
 link .vimrc .vimrc
+link .vim/ftplugin/php.vim
 link .vim/vundle.vim
 link .vim/pluginsettings.vim
 link .vim/keybindings.vim
