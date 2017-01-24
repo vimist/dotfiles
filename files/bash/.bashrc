@@ -14,6 +14,7 @@ PS4="$(build_PS2_PS4)"
 # Alias'
 alias ls='ls --color=always'
 alias ll='ls -lh'
+alias tree='tree -C'
 
 # Load local bash file for box specific configuration
 [[ -f "$HOME/.bashrc_local" ]] && source "$HOME/.bashrc_local"
