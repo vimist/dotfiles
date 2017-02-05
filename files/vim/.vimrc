@@ -13,6 +13,8 @@ set nocompatible
 " Highlight search results
 set hlsearch
 
+set colorcolumn=80
+
 set wrap
 
 set cursorline
