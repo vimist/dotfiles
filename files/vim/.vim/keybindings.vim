@@ -2,4 +2,4 @@
 nmap <leader>n :NERDTreeToggle<CR>
 
 " Toggle spelling highlighting
-nmap <F7> :set spell!<CR>
+nmap <silent> <F7> :set spell!<CR>
