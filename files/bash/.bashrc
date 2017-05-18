@@ -11,6 +11,9 @@ PS2="$(build_PS2_PS4)"
 PS3="$(build_PS3)"
 PS4="$(build_PS2_PS4)"
 
+# Environment
+PROMPT_DIRTRIM=4
+
 # Alias'
 alias ls='ls --color=always'
 alias ll='ls -lh'
