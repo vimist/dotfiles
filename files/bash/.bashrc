@@ -20,6 +20,7 @@ alias ls='ls --color=always'
 alias ll='ls -lh'
 alias tree='tree -C'
 alias grep='grep --color'
+alias less='less -R'
 
 # Load local bash file for box specific configuration
 [[ -f "$HOME/.bashrc_local" ]] && source "$HOME/.bashrc_local"
