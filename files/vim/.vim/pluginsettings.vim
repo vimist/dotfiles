@@ -1,6 +1,7 @@
 " NERDCommenter settings
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
+let g:NERDTreeQuitOnOpen = 1
 
 " Jellybeans settings
 let g:jellybeans_overrides = {
