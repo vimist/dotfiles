@@ -15,6 +15,8 @@ Plugin 'nanotech/jellybeans.vim'
 
 Plugin 'nathanaelkane/vim-indent-guides'
 
+Plugin 'danro/rename.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
