@@ -15,3 +15,10 @@ let g:jellybeans_overrides = {
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_default_mapping = 0
 
+" Buftabline
+let g:buftabline_show = 1
+let g:buftabline_numbers = 1
+
+highlight link BufTabLineCurrent User2
+highlight link BufTabLineInactive User1
+highlight link BufTabLineHidden User1

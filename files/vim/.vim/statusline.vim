@@ -28,8 +28,3 @@ set statusline+=%2*\ \ %{GetMode()}\ \  " Current mode
 set statusline+=│\ \ %(%n\ :\ %f%)\ \ %1* " Buffer number and filename
 set statusline+=\ \ \ \ \ \ \ \ %= " Separator between left and right (always have at least 8 spaces)
 set statusline+=%2*\ \ C:%c\ L:%l/%L\ \ │\ \ %<%{getcwd()}\ \  " Cursor position and CWD
-
-" Colours for statusline
-hi User1 ctermfg=White ctermbg=234
-hi User2 ctermfg=234 ctermbg=Yellow
-

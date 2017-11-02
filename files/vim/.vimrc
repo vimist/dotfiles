@@ -72,3 +72,6 @@ set smartindent
 " Set low priority file suffixes for auto completion
 set suffixes=.swp
 
+" Custom colours for general use
+highlight User1 ctermfg=White ctermbg=234
+highlight User2 ctermfg=234 ctermbg=Yellow
