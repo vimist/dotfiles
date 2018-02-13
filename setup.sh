@@ -49,13 +49,23 @@ popd
 
 # Vim
 pushd files/vim
-link .vimrc .vimrc
+link .vimrc
 link .vim/ftplugin/php.vim
 link .vim/ftplugin/yaml.vim
 link .vim/vundle.vim
 link .vim/pluginsettings.vim
 link .vim/keybindings.vim
 link .vim/statusline.vim
+
+# Create special directories
+for dir in "$HOME/.vim/backup_files" "$HOME/.vim/swap_files"; do
+	if [[ -d $dir ]]; then
+		rm -Rf "$dir"
+		echo "Removed existing vim backup and swap file directories"
+	fi
+
+	mkdir -p "$dir"
+done
 
 vundle_path="$HOME/.vim/bundle"
 if [[ -d "$vundle_path" ]]; then
