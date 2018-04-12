@@ -13,7 +13,9 @@ PS4="$(build_PS2_PS4)"
 
 # Environment
 PROMPT_DIRTRIM=4
-HISTCONTROL=ignorespace
+HISTCONTROL=ignorespace:erasedups
+
+shopt -s histappend
 
 # Alias'
 alias ls='ls --color=always'
