@@ -52,6 +52,7 @@ pushd files/vim
 link .vimrc
 link .vim/ftplugin/php.vim
 link .vim/ftplugin/yaml.vim
+link .vim/ftplugin/markdown.vim
 link .vim/vundle.vim
 link .vim/pluginsettings.vim
 link .vim/keybindings.vim
