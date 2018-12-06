@@ -1,5 +1,5 @@
 " Load other configuration files
-source $HOME/.vim/vundle.vim
+source $HOME/.vim/plugins.vim
 source $HOME/.vim/pluginsettings.vim
 source $HOME/.vim/keybindings.vim
 

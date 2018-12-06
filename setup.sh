@@ -53,7 +53,7 @@ link .vimrc
 link .vim/ftplugin/php.vim
 link .vim/ftplugin/yaml.vim
 link .vim/ftplugin/markdown.vim
-link .vim/vundle.vim
+link .vim/plugins.vim
 link .vim/pluginsettings.vim
 link .vim/keybindings.vim
 link .vim/statusline.vim
@@ -68,17 +68,18 @@ for dir in "$HOME/.vim/backup_files" "$HOME/.vim/swap_files"; do
 	mkdir -p "$dir"
 done
 
-vundle_path="$HOME/.vim/bundle"
-if [[ -d "$vundle_path" ]]; then
-    rm -Rf "$vundle_path"
-    echo "Removed existing Vundle plugins"
+plug_path="$HOME/.vim/plug"
+if [[ -d "$plug_path" ]]; then
+    rm -Rf "$plug_path"
+    echo "Removed existing vim plugins"
 fi
 
-git clone https://github.com/VundleVim/Vundle.vim.git "$vundle_path/Vundle.vim"
-echo "Installed Vundle"
+curl --create-dirs -Lo "$HOME/.vim/autoload/plug.vim" \
+	"https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+echo "Installed Plug"
 
-vim -c 'PluginClean!' -c 'PluginInstall' -c 'quitall'
-echo "Installed Vundle plugins"
+vim -c 'PlugClean!' -c 'PlugInstall' -c 'quitall'
+echo "Installed vim plugins"
 popd
 
 # Tmux
