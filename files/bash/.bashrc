@@ -4,6 +4,8 @@
 # Load in dependencies
 source "$HOME/.bash/promptstring.sh"
 
+EDITOR=vim
+
 # Prompt strings
 PS0='\n'
 PS1='$(build_PS1 "\u" "\h" "\w" "\j" "$?" "\#")'
