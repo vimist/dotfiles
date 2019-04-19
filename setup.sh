@@ -53,6 +53,8 @@ link .vimrc
 link .vim/ftplugin/php.vim
 link .vim/ftplugin/yaml.vim
 link .vim/ftplugin/markdown.vim
+link .vim/ftplugin/tex.vim
+link .vim/ftplugin/plaintex.vim
 link .vim/plugins.vim
 link .vim/pluginsettings.vim
 link .vim/keybindings.vim
@@ -92,6 +94,11 @@ popd
 # Git
 pushd files/git
 link .gitconfig
+popd
+
+# GDB
+pushd files/gdb
+link .gdbinit
 popd
 
 echo

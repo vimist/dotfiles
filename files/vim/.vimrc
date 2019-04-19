@@ -28,6 +28,9 @@ set hidden
 
 " Remove comment character when joining lines
 set formatoptions+=j
+"
+" Don't use two spaces when joining lines with a '.'
+set nojoinspaces
 
 " Don't show the mode as our custom statusline does this for us
 set noshowmode
