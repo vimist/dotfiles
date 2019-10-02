@@ -44,6 +44,8 @@ function popd() {
 # Bash
 pushd files/bash
 link .bashrc
+link .bash/styles.sh
+link .bash/promptcommand.sh
 link .bash/promptstring.sh
 popd
 

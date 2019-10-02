@@ -1,15 +1,3 @@
-# Associative array to contain text style codes
-declare -A styles
-
-# Manually cache the colours and styles
-styles[reset]="\x01$(tput sgr0)\x02"
-
-styles[red_black]="\x01$(tput setaf 1)$(tput setab 0)\x02"
-styles[black_yellow]="\x01$(tput setaf 0)$(tput setab 3)\x02"
-styles[black_blue]="\x01$(tput setaf 0)$(tput setab 4)\x02"
-styles[black_red]="\x01$(tput setaf 0)$(tput setab 1)\x02"
-styles[white_darkgrey]="\x01$(tput setaf 7)$(tput setab 234)\x02"
-
 # Build PS1
 # $1 The user
 # $2 The hostname
@@ -27,12 +15,6 @@ function build_PS1() {
 
 	# Manually keep track of the PS1 length
 	length=0
-
-	# Display the exit code if there was an error (not suspended)
-	# and if wasn't before the first command was run
-	if [[ $exit_code -gt 0 && $exit_code -ne 148 && $command_number -gt 1 ]]; then
-		exit_code_segment="${styles[red_black]}Exited with code${styles[reset]} ${exit_code}\n\n"
-	fi
 
 	# Get background jobs
 	if [[ $job_count -gt 0 ]]; then
