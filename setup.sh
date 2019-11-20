@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 # Ensure we're working from this directory
-cd $(dirname $0)
+cd "$(dirname $0)"
 
 # The link function will append this to any files that already
 # exist in order to preserve them
