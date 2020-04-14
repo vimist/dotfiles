@@ -28,8 +28,8 @@ function build_PS1() {
 		identity_colour="red"
 	fi
 
-	identity_segment="${styles[black_${identity_colour}]} ${user}@${host} ${styles[reset]}"
-	(( length += 3+${#user}+${#host} ))
+	#identity_segment="${styles[black_${identity_colour}]} ${user}@${host} ${styles[reset]}"
+	#(( length += 3+${#user}+${#host} ))
 
 	cwd_segment="${styles[white_darkgrey]} ${current_directory} ${styles[reset]}"
 	(( length += 2+${#current_directory} ))
