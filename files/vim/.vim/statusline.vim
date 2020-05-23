@@ -17,7 +17,8 @@ function! GetMode()
 \		'ce': 'EX',
 \		'rm': 'MORE',
 \		'r?': 'CONFIRM',
-\		'!':  'SHELL'
+\		'!':  'SHELL',
+\		't':  'TERM'
 \	}
 
 	return l:mode_map[mode()]
