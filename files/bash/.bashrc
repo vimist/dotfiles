@@ -18,6 +18,10 @@ PS4="$(build_PS2_PS4)"
 PROMPT_COMMAND="prompt_command"
 
 # Environment
+export EDITOR=vim
+export PAGER=less
+export BROWSER=firefox
+
 PROMPT_DIRTRIM=4
 HISTCONTROL=ignorespace:erasedups
 HISTFILESIZE=20480
