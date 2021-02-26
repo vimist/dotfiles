@@ -20,9 +20,9 @@ let g:indent_guides_default_mapping = 0
 let g:buftabline_show = 1
 let g:buftabline_numbers = 1
 
-" NERDTree settings
-autocmd FileType nerdtree setlocal relativenumber
-
 highlight link BufTabLineCurrent User2
 highlight link BufTabLineInactive User1
 highlight link BufTabLineHidden User1
+
+" NERDTree settings
+autocmd FileType nerdtree setlocal relativenumber
