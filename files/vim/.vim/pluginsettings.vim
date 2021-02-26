@@ -6,9 +6,9 @@ let NERDTreeShowHidden=1
 
 " Jellybeans settings
 let g:jellybeans_overrides = {
-\	'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+\	'background': { 'ctermbg': '232', '256ctermbg': '232' },
 \	'SpecialKey': { 'ctermbg': '233', '256ctermbg': '233' },
-\	'IndentGuidesEven': { 'ctermbg': 'none', '256ctermbg': 'none' },
+\	'IndentGuidesEven': { 'ctermbg': '232', '256ctermbg': '232' },
 \	'IndentGuidesOdd': { 'ctermbg': '233', '256ctermbg': '233' }
 \}
 
