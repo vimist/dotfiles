@@ -3,10 +3,6 @@
 # Ensure we're working from this directory
 cd "$(dirname $0)"
 
-# The link function will append this to any files that already
-# exist in order to preserve them
-backup_suffix='.dotfile_backup'
-
 # Link a file from this repository into the users home directory
 # backups of existing files will be made with a suffix of $backup_suffix
 # $1 The source file, relative to the current directory
@@ -25,7 +21,7 @@ function link() {
         echo "Removed existing symlink '$dst'"
     fi
 
-    ln --symbolic --backup --suffix "$backup_suffix" "$src" "$dst"
+    ln --symbolic "$src" "$dst"
     echo "Installed '$dst'"
 }
 
@@ -105,4 +101,3 @@ popd
 
 echo
 echo "Done!"
-echo "Any existing files have been renamed with a suffix of '$backup_suffix'"
