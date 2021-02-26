@@ -39,7 +39,7 @@ set noshowmode
 source $HOME/.vim/statusline.vim
 
 " Move the swap and backup files to a single location
-set backupdir=$HOME/.vim/backup_files/
+set backupdir=$HOME/.vim/backup_files//
 set directory=$HOME/.vim/swap_files//
 
 " Always show the status line
