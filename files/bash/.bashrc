@@ -5,8 +5,7 @@
 source "$HOME/.bash/styles.sh"
 source "$HOME/.bash/promptstring.sh"
 source "$HOME/.bash/promptcommand.sh"
-
-EDITOR=vim
+source "$HOME/.bash/functions.sh"
 
 # Prompt strings
 PS0='\n'
