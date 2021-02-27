@@ -1,6 +1,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Add users bin to PATH
+export PATH="$PATH:$HOME/bin"
+
 # Load in dependencies
 source "$HOME/.bash/styles.sh"
 source "$HOME/.bash/promptstring.sh"
