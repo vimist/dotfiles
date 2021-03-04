@@ -120,10 +120,5 @@ pushd files/gdb
 link .gdbinit "$HOME/.gdbinit"
 popd
 
-# Scripts
-pushd files/scripts
-link open_url.sh "$HOME/bin/open_url"
-popd
-
 echo
 echo "Done!"
