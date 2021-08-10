@@ -1,8 +1,13 @@
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+# Environment
+export EDITOR=vim
+export PAGER=less
+export BROWSER=firefox
+export PATH="$PATH:$HOME/bin"  # Add users bin to PATH
 
-# Add users bin to PATH
-export PATH="$PATH:$HOME/bin"
+
+# Quit here if not running interactively
+
+[[ $- != *i* ]] && return
 
 # Load in dependencies
 source "$HOME/.bash/styles.sh"
@@ -18,11 +23,6 @@ PS3="$(build_PS3)"
 PS4="$(build_PS2_PS4)"
 
 PROMPT_COMMAND="prompt_command"
-
-# Environment
-export EDITOR=vim
-export PAGER=less
-export BROWSER=firefox
 
 PROMPT_DIRTRIM=4
 HISTCONTROL=ignorespace:erasedups
@@ -40,4 +40,3 @@ alias xxd='xxd -g1'
 
 # Load local bash file for box specific configuration
 [[ -f "$HOME/.bashrc_local" ]] && source "$HOME/.bashrc_local"
-
