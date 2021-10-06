@@ -59,7 +59,6 @@ link .bashrc "$HOME/.bashrc"
 link .bash/styles.sh
 link .bash/promptcommand.sh
 link .bash/promptstring.sh
-link .bash/functions.sh
 popd
 
 # Vim

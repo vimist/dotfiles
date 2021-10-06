@@ -13,7 +13,6 @@ export PATH="$PATH:$HOME/bin"  # Add users bin to PATH
 source "$HOME/.bash/styles.sh"
 source "$HOME/.bash/promptstring.sh"
 source "$HOME/.bash/promptcommand.sh"
-source "$HOME/.bash/functions.sh"
 
 # Prompt strings
 PS0='\n'
