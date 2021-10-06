@@ -1,3 +1,6 @@
 run_in_terminal() {
-    alacritty --command "$@"
+    TITLE="$1"
+    shift
+
+    alacritty --title "$TITLE" --command "$@"
 }
