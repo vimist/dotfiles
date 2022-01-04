@@ -24,7 +24,9 @@ function! GetMode()
 	return l:mode_map[mode()]
 endfunction
 
-set statusline=%2*\ \ %{GetMode()}\ \  " Current mode
+
+set statusline=%2*\ \ %{GetMode()} " Current mode
+set statusline+=\ %{&paste\ ?\ \"(paste)\ \"\ :\ \"\"}\  " Get the paste status
 set statusline+=%1*\ \ %(%n\ :\ %f%)\ \ %1* " Buffer number and filename
 set statusline+=\ \ \ \ \ \ \ \ %= " Separator between left and right (always have at least 8 spaces)
 set statusline+=%2*\ \ C:%c\ %P\ \ │\ \ %<%{getcwd()}\ \  " Cursor position and CWD
