@@ -11,6 +11,7 @@ let g:jellybeans_overrides = {
 \	'IndentGuidesEven': { 'ctermbg': '232', '256ctermbg': '232' },
 \	'IndentGuidesOdd': { 'ctermbg': '233', '256ctermbg': '233' }
 \}
+let g:jellybeans_use_term_italics = 1
 
 " Indent guides
 let g:indent_guides_enable_on_vim_startup = 1
