@@ -24,9 +24,15 @@ function! GetMode()
 	return l:mode_map[mode()]
 endfunction
 
+function! StatusLine()
+	let statusline  = "%2*  " . GetMode()
+	let statusline .= " " . (&paste ? "(paste) " : "") . " "
+	let statusline .= "%1*  %(%n\ :\ %f%)  " " Buffer number and filename
+	let statusline .= "       %= " " Separator between left and right (always have at least 8 spaces)
+	let statusline .= "%2*  C:%c %P  │  %b (0x%02B)  " " Cursor position and byte value
 
-set statusline=%2*\ \ %{GetMode()} " Current mode
-set statusline+=\ %{&paste\ ?\ \"(paste)\ \"\ :\ \"\"}\  " Get the paste status
-set statusline+=%1*\ \ %(%n\ :\ %f%)\ \ %1* " Buffer number and filename
-set statusline+=\ \ \ \ \ \ \ \ %= " Separator between left and right (always have at least 8 spaces)
-set statusline+=%2*\ \ C:%c\ %P\ \ │\ \ %<%{getcwd()}\ \  " Cursor position and CWD
+	return statusline
+endfunction
+
+
+set statusline=%!StatusLine()
