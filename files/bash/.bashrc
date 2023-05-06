@@ -36,6 +36,8 @@ alias tree='tree -C'
 alias grep='grep --color'
 alias less='less -R'
 alias xxd='xxd -g1'
+alias lsblk='lsblk -o NAME,FSTYPE,FSUSED,SIZE,FSUSE%,MOUNTPOINTS,PARTLABEL'
+alias ip='ip --color=always'
 
 # Load local bash file for box specific configuration
 [[ -f "$HOME/.bashrc_local" ]] && source "$HOME/.bashrc_local"
