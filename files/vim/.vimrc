@@ -26,6 +26,8 @@ set fillchars=vert:│,fold:-,diff:-
 
 set hidden
 
+set wildmode=longest,list
+
 " Remove comment character when joining lines
 set formatoptions+=j
 "
